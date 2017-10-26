@@ -1,0 +1,88 @@
+<!DOCTYPE html>
+<html>
+  <head>
+    <meta charset="utf-8">
+    <title>Net-A-Porter</title>
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <link href="https://maxcdn.bootstrapcdn.com/bootstrap/3.3.7/css/bootstrap.min.css" rel="stylesheet" integrity="sha384-BVYiiSIFeK1dGmJRAkycuHAHRg32OmUcww7on3RYdg4Va+PmSTsz/K68vbdEjh4u" crossorigin="anonymous">
+    <link rel="stylesheet" href="css/style.css">
+    <script src="js/app.js" charset="utf-8"></script>
+  </head>
+  <body>
+    <div class="nap"><h1>Net-A-Porter</h1></div>
+
+    <div class="filter-total-results-pagenation-container">
+
+      <div class="filter">
+        <div class="outfit-button">
+          <button id="view" class="secondary-button" type="button" name="button"></button>
+          <div id="sort-by" class="sort-by">
+            <form action="/gb/en/d/Shop/Whats-New/Now" name="formPrice" method="get" id="product-list-price-filter">
+              <select id="sort-order" name="sortOrder">
+                <option value="sort-by" selected="selected">Sort by</option>
+                <option value="new-in">New in</option>
+                <option value="price-desc">Price High to Low</option>
+                <option value="price-asc">Price Low to High</option>
+              </select>
+              <input type="submit" value="Go">
+              <input type="hidden" value="" name="designerFilter">
+              <input type="hidden" value="" name="sizeFilter">
+            </form>
+          </div>
+        </div>
+
+      </div>
+
+      <div class="total-results">
+        <div class="whats-new-text">What's new</div>
+        <div class="total-number-of-products"></div>
+      </div>
+
+      <div class="pagination-container">
+        <ul class="pagination pagination-sm">
+          <li id="next"><a href="#">NEXT</a></li>
+          <li id="page" data-toggle="tooltip" title="Hooray!"><a href="#">1</a></li>
+        </ul>
+      </div>
+
+      <hr>
+
+    </div>
+
+
+
+    <div class="menu-and-product-container">
+      <div class="left-menu">
+        <li>ALL</li>
+        <li>CLOTHING</li>
+        <li>BAGS</li>
+        <li>SHOES</li>
+        <li>ACESSORIES</li>
+        <li>LINGERIE</li>
+        <li>BEAUTY</li>
+        <li>SPORT</li>
+      </div>
+
+      <div class="main-container">
+        <div id="container" class="container">
+
+          <!-- <div class="prod-container">
+            <div class="prod-image"></div>
+            <div class="prod-designer"></div>
+          </div> -->
+
+        </div>
+        <hr>
+        <div class="pagination-container">
+          <ul class="pagination pagination-sm">
+            <li id="next-at-bottom"><a href="#">NEXT</a></li>
+            <!-- <li id="page"><a href="#">1</a></li> -->
+          </ul>
+        </div>
+
+      </div>
+    </div>
+
+
+  </body>
+</html>
